@@ -1,0 +1,95 @@
+// HERO 
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+section.hero {
+    
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 47%;
+        h1 {
+            color: v.$primary_color;
+            font-family: v.$title-font;
+            font-size: v.$large-size;
+            font-weight: v.$title-font-weight;
+            font-style: v.$font-style;
+            line-height: 100%;    
+            margin: 0;
+        }
+
+        p {
+            color: v.$primary_color;
+            font-family: v.$primary-font;
+            font-size: v.$medium-size;
+            font-weight: v.$body-font-weight;
+            font-style: v.$font-style;
+            opacity: 50%;
+            line-height: 40px;
+        }
+        .hero__cta {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            padding-bottom: 100px;
+            a.filled {
+                @include mx.reset-a();
+                background-color: v.$button-color;
+                color: v.$primary_color;
+                padding: 16px 60px;
+                font-family: v.$primary-font;
+                font-size: v.$small-size;
+                font-weight: v.$body-font-weight;
+                font-style: v.$font-style;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-bottom-right-radius: 16px;
+                &:hover {
+                    color: v.$button-color;
+                    background-color: white;
+                }
+            }
+            a.empty {
+                color: white;
+                color: v.$primary_color;
+                font-family: v.$primary-font;
+                font-size: v.$small-size;
+                font-weight: v.$subtitle-font-weight;
+                font-style: v.$font-style;
+                &::after {
+                    content: url('@/assets/img/icon_arrow.svg');
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+                &:hover {
+                    color: v.$button-color;
+                }
+            }
+        }
+    }
+    .hero__categories {
+        display: flex;
+        gap: 48px;
+        article {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            h2 {
+                margin: 0;
+                color: v.$primary_color;
+                font-family: v.$primary-font;
+                font-size: v.$small-size;
+                font-weight: v.$subtitle-font-weight;
+                font-style: v.$font-style;
+            }
+            &:hover {
+                background-color: v.$button-color;
+                border-radius: 16px;
+                
+            }
+        }
+    }
+    
+}

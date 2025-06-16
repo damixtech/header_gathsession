@@ -1,0 +1,13 @@
+//BODY 
+
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+body {
+    background-image: url('@/assets/img/hero_bg@2x.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: top 150px right 100px;
+}
+

@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+header {
+    margin-bottom: 96px;
+    position: relative;
+    .rectangle {
+        width: 32px;
+        height: 4px;
+        background-color: v.$button-color;
+        border-radius: 6px;
+        position: absolute;
+        top: 75px;
+        right: 485px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 37px 0;
+        figure {
+            margin: 0;
+            img {
+                width: 235px;
+            }
+        }
+        ul {
+            @include mx.reset-nav-ul();
+            display: flex;
+            gap: 48px;
+            justify-content: space-between;
+            a {
+                @include mx.reset-a();
+                color: v.$secondary_color;
+                font-family: v.$primary-font;
+                font-size: v.$small-size;
+                font-weight: v.$body-font-weight;
+                font-style: v.$font-style;
+                &:hover {
+                    color: v.$button-color;
+            
+                }
+            }
+        }
+    }
+}

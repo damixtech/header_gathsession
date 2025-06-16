@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+//COLORS
+$primary_color: white;
+$secondary_color: #ABABAB;
+$button-color: #DB2A6B;
+$background-color: #2B2D38;
+
+
+//FONT FAMILIES
+$primary-font: "Poppins", sans-serif;
+$title-font: "Merriweather", serif;
+
+//FONT STYLES
+$body-font-weight: 400;
+$subtitle-font-weight: 600;
+$title-font-weight: 700;
+
+
+$font-style: normal;
+
+//FONT-SIZE
+$small-size: 18px;
+$medium-size: 24px;
+$large-size: 80px;
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1500px !default;

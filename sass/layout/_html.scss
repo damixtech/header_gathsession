@@ -1,0 +1,7 @@
+//HTML
+
+@use '../abstracts/variables' as v;
+
+html {
+    background-color: v.$background-color; 
+}
